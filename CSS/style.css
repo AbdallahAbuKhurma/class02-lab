@@ -1,0 +1,35 @@
+img{
+    display: block;
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px solid rgb(163, 161, 161);
+    margin-bottom: 30px;
+    border-radius: 50%;
+
+}
+
+h1{
+text-align: center;
+text-decoration: solid;
+background-color:#f4f9f9 ;
+margin-bottom: 30px;
+border: 60px solid #f4f9f9 ;
+}
+p{
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    margin-bottom: 30px;
+
+
+}
+
+body{
+    background-color: snow;
+}
+
+footer{
+    background-color: #aaaaaa;
+}
