@@ -33,3 +33,18 @@ body{
 footer{
     background-color: #aaaaaa;
 }
+
+div ul{
+    text-align: left;
+    text-decoration: none;
+}
+
+div ul li{
+    margin: 10px 20px 10px 0px;
+}
+
+div ol li{
+    margin: 10px 20px 10px 0px;
+
+}
+

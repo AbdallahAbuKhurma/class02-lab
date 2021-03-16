@@ -7,6 +7,8 @@ let name = prompt ('Please enter your name');
 
 alert('Hi '+ name);
 
+alert(name +' There is a seires of questions game are you ready?')
+
 let doing = prompt ('Am I currently doing something I love?');
 
 
@@ -72,7 +74,41 @@ else if (school.toLowerCase() === 'no' || school.toLowerCase() === 'n')
     alert ('the answer is incorrect, actually I did it twice or more ^.^');
 }
 
+let guess = prompt ('There is a number in my mind and its between (0 - 10), you have 4 attempts, try to guess what is it?');
 
+let guessans = 5;
+
+for (let i = 0; i < 3 ; i++ ){
+    if (guessans == guess)
+    {
+        alert('you are right');
+        break;
+    }else
+    {
+        guess = prompt('please try again');
+    }
+}
+
+let multi = prompt('What is my favourite video game?');
+
+let multians = ['pubg', 'call of duty', 'watch dogs 2'];
+
+for (let i = 0; i < 5 ; i++ ){
+    if (multi == multians[0])
+    {
+        alert('you are right');
+        break;
+    }else
+    {
+        multi = prompt('please try again');
+    }
+}
+
+alert('the right answers are pubg, call of duty and watch dogs 2');
+
+
+    
+    
 switch(doing)
 {
     case 'yes':
