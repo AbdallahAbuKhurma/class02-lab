@@ -5,15 +5,16 @@ let welcome = alert ('Welcome to About Me page');
 
 let name = prompt ('Please enter your name');
 
+alert('Hi '+ name);
 
 let doing = prompt ('Am I currently doing something I love?');
 
 
-if(doing.toLowerCase() === 'yes'|| doing.toUpperCase() === 'y')
+if(doing.toLowerCase() === 'yes'|| doing.toLowerCase() === 'y')
 {
     alert ('the answer is correct');
 }
-else if (doing.toLowerCase() === 'no' || doing.toUpperCase === 'n')
+else if (doing.toLowerCase() === 'no' || doing.toLowerCase() === 'n')
 {
     alert ('the answer is incorrect');
 }
@@ -22,11 +23,11 @@ else if (doing.toLowerCase() === 'no' || doing.toUpperCase === 'n')
 let challenge = prompt ('Do I see my challenges as a disadvantage?');
 
 
-if(challenge.toLowerCase() === 'yes'|| doing.toUpperCase() === 'y')
+if(challenge.toLowerCase() === 'yes'|| doing.toLowerCase() === 'y')
 {
     alert ('The answer is incorrect');
 }
-else if (challenge.toLowerCase() === 'no' || challenge.toUpperCase === 'n')
+else if (challenge.toLowerCase() === 'no' || challenge.toLowerCase() === 'n')
 {
     alert ('The answer is correct');
 }
@@ -35,11 +36,11 @@ else if (challenge.toLowerCase() === 'no' || challenge.toUpperCase === 'n')
 let personal = prompt ('Am I a good person?');
 
 
-if(personal.toLowerCase() === 'yes' || personal.toUpperCase() === 'y')
+if(personal.toLowerCase() === 'yes' || personal.toLowerCase() === 'y')
 {
     alert ('the answer is correct');
 }
-else if (personal.toLowerCase() === 'no' || personal.toUpperCase === 'n')
+else if (personal.toLowerCase() === 'no' || personal.toLowerCase() === 'n')
 
 {
     alert ('the answer is incorrect');
@@ -49,11 +50,11 @@ else if (personal.toLowerCase() === 'no' || personal.toUpperCase === 'n')
 let sleep = prompt ('Have I ever fallen asleep at school or work?');
 
 
-if (sleep.toLowerCase() === 'yes' || sleep.toUpperCase() === 'y')
+if (sleep.toLowerCase() === 'yes' || sleep.toLowerCase() === 'y')
 {
     alert ('the answer is incorrect');
 }
-else if (sleep.toLowerCase() === 'no' || sleep.toUpperCase === 'n')
+else if (sleep.toLowerCase() === 'no' || sleep.toLowerCase() === 'n')
 {
     alert ('the answer is correct');
 }
@@ -62,11 +63,11 @@ else if (sleep.toLowerCase() === 'no' || sleep.toUpperCase === 'n')
 let school = prompt ('Have I ever run away from my school?');
 
 
-if (school.toLowerCase() === 'yes' || school.toUpperCase() === 'y')
+if (school.toLowerCase() === 'yes' || school.toLowerCase() === 'y')
 {
     alert ('the answer is correct, , actually I did it twice or more ^.^');
 }
-else if (school.toLowerCase() === 'no' || school.toUpperCase === 'n')
+else if (school.toLowerCase() === 'no' || school.toLowerCase() === 'n')
 {
     alert ('the answer is incorrect, actually I did it twice or more ^.^');
 }
