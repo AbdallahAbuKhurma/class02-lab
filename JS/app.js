@@ -9,12 +9,16 @@ alert('Hi '+ name);
 
 alert(name +' There is a seires of questions game are you ready?')
 
+let grade = 0;
+
+
 let doing = prompt ('Am I currently doing something I love?');
 
 
 if(doing.toLowerCase() === 'yes'|| doing.toLowerCase() === 'y')
 {
     alert ('the answer is correct');
+    grade = grade + 1
 }
 else if (doing.toLowerCase() === 'no' || doing.toLowerCase() === 'n')
 {
@@ -32,6 +36,8 @@ if(challenge.toLowerCase() === 'yes'|| doing.toLowerCase() === 'y')
 else if (challenge.toLowerCase() === 'no' || challenge.toLowerCase() === 'n')
 {
     alert ('The answer is correct');
+    grade = grade + 1
+
 }
 
 
@@ -41,6 +47,8 @@ let personal = prompt ('Am I a good person?');
 if(personal.toLowerCase() === 'yes' || personal.toLowerCase() === 'y')
 {
     alert ('the answer is correct');
+    grade = grade + 1
+
 }
 else if (personal.toLowerCase() === 'no' || personal.toLowerCase() === 'n')
 
@@ -59,6 +67,8 @@ if (sleep.toLowerCase() === 'yes' || sleep.toLowerCase() === 'y')
 else if (sleep.toLowerCase() === 'no' || sleep.toLowerCase() === 'n')
 {
     alert ('the answer is correct');
+    grade = grade + 1
+
 }
 
 
@@ -68,6 +78,8 @@ let school = prompt ('Have I ever run away from my school?');
 if (school.toLowerCase() === 'yes' || school.toLowerCase() === 'y')
 {
     alert ('the answer is correct, , actually I did it twice or more ^.^');
+    grade = grade + 1
+
 }
 else if (school.toLowerCase() === 'no' || school.toLowerCase() === 'n')
 {
@@ -82,6 +94,8 @@ for (let i = 0; i < 3 ; i++ ){
     if (guessans == guess)
     {
         alert('you are right');
+        grade = grade + 1
+
         break;
     }else
     {
@@ -98,6 +112,8 @@ for (let i = 0; i < 5 ; i++ ){
     {
         alert('you are right');
         break;
+        grade = grade + 1
+
     }else
     {
         multi = prompt('please try again');
@@ -106,6 +122,7 @@ for (let i = 0; i < 5 ; i++ ){
 
 alert('the right answers are pubg, call of duty and watch dogs 2');
 
+alert('yor grade is ' + grade);
 
     
     
