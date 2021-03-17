@@ -1,4 +1,25 @@
 'use strict';
+let grade = 0;
+let vedioGame =false;
+function score()
+{
+    grade = grade + 1;
+}
+function correct()
+    {
+        alert ('the answer is correct'); 
+        grade = grade + 1; 
+    }
+    function incorrect (){
+        alert ('the answer is incorrect');
+    }
+    function rigth(){
+        alert('you are right');
+        grade = grade + 1;
+    }
+    function tryAgain() {
+        multi = prompt('please try again');
+    }
 
 let welcome = alert ('Welcome to About Me page');
 
@@ -9,20 +30,17 @@ alert('Hi '+ name);
 
 alert(name +' There is a seires of questions game are you ready?')
 
-let grade = 0;
-
 
 let doing = prompt ('Am I currently doing something I love?');
 
 
 if(doing.toLowerCase() === 'yes'|| doing.toLowerCase() === 'y')
 {
-    alert ('the answer is correct');
-    grade = grade + 1
+    correct();
 }
 else if (doing.toLowerCase() === 'no' || doing.toLowerCase() === 'n')
 {
-    alert ('the answer is incorrect');
+    incorrect ();
 }
 
 
@@ -31,13 +49,12 @@ let challenge = prompt ('Do I see my challenges as a disadvantage?');
 
 if(challenge.toLowerCase() === 'yes'|| doing.toLowerCase() === 'y')
 {
-    alert ('The answer is incorrect');
+    incorrect();
 }
 else if (challenge.toLowerCase() === 'no' || challenge.toLowerCase() === 'n')
 {
-    alert ('The answer is correct');
-    grade = grade + 1
-
+    correct();
+ 
 }
 
 
@@ -46,14 +63,13 @@ let personal = prompt ('Am I a good person?');
 
 if(personal.toLowerCase() === 'yes' || personal.toLowerCase() === 'y')
 {
-    alert ('the answer is correct');
-    grade = grade + 1
+    correct();
 
 }
 else if (personal.toLowerCase() === 'no' || personal.toLowerCase() === 'n')
 
 {
-    alert ('the answer is incorrect');
+    incorrect ();
 }
 
 
@@ -62,12 +78,11 @@ let sleep = prompt ('Have I ever fallen asleep at school or work?');
 
 if (sleep.toLowerCase() === 'yes' || sleep.toLowerCase() === 'y')
 {
-    alert ('the answer is incorrect');
+    incorrect();
 }
 else if (sleep.toLowerCase() === 'no' || sleep.toLowerCase() === 'n')
 {
-    alert ('the answer is correct');
-    grade = grade + 1
+    correct();
 
 }
 
@@ -78,7 +93,7 @@ let school = prompt ('Have I ever run away from my school?');
 if (school.toLowerCase() === 'yes' || school.toLowerCase() === 'y')
 {
     alert ('the answer is correct, , actually I did it twice or more ^.^');
-    grade = grade + 1
+    score();
 
 }
 else if (school.toLowerCase() === 'no' || school.toLowerCase() === 'n')
@@ -93,8 +108,7 @@ let guessans = 5;
 for (let i = 0; i < 3 ; i++ ){
     if (guessans == guess)
     {
-        alert('you are right');
-        grade = grade + 1
+        rigth();
 
         break;
     }else
@@ -106,18 +120,22 @@ for (let i = 0; i < 3 ; i++ ){
 let multi = prompt('What is my favourite video game?');
 
 let multians = ['pubg', 'call of duty', 'watch dogs 2'];
-
-for (let i = 0; i < 5 ; i++ ){
-    if (multi == multians[0])
+for (let x =0;x<6;x++){
+for (let i = 0; i < multians.length ; i++ ){
+    if (multi == multians[i])
     {
-        alert('you are right');
+        vedioGame=true;
+
         break;
-        grade = grade + 1
-
-    }else
-    {
-        multi = prompt('please try again');
     }
+}
+if (vedioGame===true){
+    rigth();
+    break;
+}else{
+    tryAgain();
+}
+
 }
 
 alert('the right answers are pubg, call of duty and watch dogs 2');
